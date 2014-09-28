@@ -9,7 +9,7 @@
     {% if current_user.is_authenticated() %}
     	{{ current_user.email }} Welcome
 	{% else %}
-    	Stranger! Please login to continue!
+    	Stranger! Please <a href="{{ url_for('login') }}">Sign In</a> to continue!
 	{% endif %}
     </p>
 </div>
